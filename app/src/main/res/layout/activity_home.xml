@@ -39,6 +39,7 @@
         android:layout_height="53dp"
         android:layout_marginTop="76dp"
         android:background="@color/goon_cyan"
+
         android:text="SOY USUARIO"
         android:textColor="#5D4037"
         app:layout_constraintEnd_toEndOf="parent"
