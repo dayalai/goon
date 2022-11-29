@@ -33,6 +33,22 @@ public class SearchTripActivity extends AppCompatActivity {
         t.setRoute("d turasas");
          tripsList.add(t);
 
+        t.setArrival("san bvorja");
+        t.setRoute("d tu casa");
+        tripsList.add(t);
+        t.setArrival("san isidro");
+        t.setRoute("d tu casa");
+        tripsList.add(t);
+        t.setArrival("san juan de mirsflores");
+        t.setRoute("d tu casa");
+        tripsList.add(t);
+        t.setArrival("san juan de lurigancho");
+        t.setRoute("d tu casa");
+        tripsList.add(t);
+        t.setArrival("san bartolo");
+        t.setRoute("d tu casa");
+        tripsList.add(t);
+
          adapter = new AdapterSearchTrip(SearchTripActivity.this,tripsList);
          recyclerView.setAdapter(adapter);
          recyclerView.setLayoutManager(new LinearLayoutManager(SearchTripActivity.this));

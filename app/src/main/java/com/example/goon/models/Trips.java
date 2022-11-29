@@ -3,14 +3,12 @@ package com.example.goon.models;
 import java.util.Date;
 
 public class Trips {
-
     private String uid;
     private String route;
     private double price;
     private Date date;
     private String departure;
     private String arrival;
-
 
     public String getUid() {
         return uid;
@@ -59,6 +57,4 @@ public class Trips {
     public void setArrival(String arrival) {
         this.arrival = arrival;
     }
-
-
 }

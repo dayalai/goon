@@ -31,19 +31,19 @@ public class AdapterSearchTrip extends RecyclerView.Adapter<AdapterSearchTrip.My
     @Override
     public AdapterSearchTrip.MyHolderViews onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater=LayoutInflater.from(context);
-        View view =inflater.inflate(R.layout.activity_search_trip,parent,false);
+        View view =inflater.inflate(R.layout.rows_trips,parent,false);
         return new MyHolderViews(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull AdapterSearchTrip.MyHolderViews holder, int position) {
         //holder.title.setText(tripsList.get(position).getpaaaaa().toos);
-        holder.rowTrips.setOnLongClickListener(view -> {
-            Intent intent= new Intent(context,TripDetail.class);
-            //intent.putExtra("@id",tripsList.get(position).getClass())
-            context.startActivity(intent);
-            return false;
-        });
+           holder.rowTrips.setOnLongClickListener(view -> {
+               Intent intent= new Intent(context,TripDetail.class);
+               //intent.putExtra("@id",tripsList.get(position).getClass())
+               context.startActivity(intent);
+               return false;
+           });
     }
 
     @Override
@@ -62,6 +62,7 @@ public class AdapterSearchTrip extends RecyclerView.Adapter<AdapterSearchTrip.My
             dateTime= itemView.findViewById(R.id.textDateTime);
             departure= itemView.findViewById(R.id.textDeparture);
             arrival= itemView.findViewById(R.id.textArrival);
+            rowTrips=itemView.findViewById(R.id.rowTrips);
         }
     }
 }
