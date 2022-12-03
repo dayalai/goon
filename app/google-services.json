@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "817539208953",
+    "firebase_url": "https://fir-bgoon-default-rtdb.firebaseio.com",
+    "project_id": "fir-bgoon",
+    "storage_bucket": "fir-bgoon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:817539208953:android:a2da636483ae22637af428",
+        "android_client_info": {
+          "package_name": "com.example.goon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "817539208953-uovdnbll38tphdgdro6mqg2vb97rijnt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh8pFqRxu5tpafEy1Fc4IsO4ht6YOavLU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "817539208953-uovdnbll38tphdgdro6mqg2vb97rijnt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
