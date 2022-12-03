@@ -47,11 +47,11 @@ public class MainCarActivity extends AppCompatActivity {
         btnRegistrar.setOnClickListener(view -> {
             capturarDatos();
             if(registra){
-                reference.child("Persona").child(car.getUid()).setValue(car);
-                mostrarMensaje("Persona Registrada");
+                reference.child("Car").child(car.getUid()).setValue(car);
+                mostrarMensaje("Auto Registrado");
             }else {
-                reference.child("Persona").child(id).updateChildren(map);
-                mostrarMensaje("Persona Actualizada");
+                reference.child("Car").child(id).updateChildren(map);
+                mostrarMensaje("Auto Actualizado");
             }
 
         });
