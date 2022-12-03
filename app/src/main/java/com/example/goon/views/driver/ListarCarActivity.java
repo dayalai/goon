@@ -61,7 +61,7 @@ public class ListarCarActivity extends AppCompatActivity {
                 String id = listaCar.get(pos).getUid();
                 listaCar.remove(pos);
                 adaptador.notifyDataSetChanged();
-                reference.child("Persona").child(id).removeValue();
+                reference.child("Car").child(id).removeValue();
             }
         }).attachToRecyclerView(rvCar);
     }
@@ -71,7 +71,7 @@ public class ListarCarActivity extends AppCompatActivity {
         reference = database.getReference();
     }
     private void mostrarDatos(){
-        reference.child("Persona").addValueEventListener(new ValueEventListener() {
+        reference.child("Car").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 listaCar.clear();

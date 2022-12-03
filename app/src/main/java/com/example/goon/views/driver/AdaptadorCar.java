@@ -52,6 +52,7 @@ public class AdaptadorCar extends RecyclerView.Adapter<AdaptadorCar.MiviewHolder
             context.startActivity(intent);
             return false;
         });
+
     }
 
     @Override
