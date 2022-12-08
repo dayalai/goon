@@ -3,6 +3,7 @@ package com.example.goon.views;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.goon.R;
+import com.example.goon.views.driver.ListarCarActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -24,7 +25,7 @@ public class HomeActivity extends AppCompatActivity {
         btnDriver=findViewById(R.id.btnHomeDriver);
         btnUser.setOnClickListener(this::onClick);
         btnDriver.setOnClickListener(view -> {
-            Intent intent = new Intent(this, SearchTripActivity.class);
+            Intent intent = new Intent(this, ListarCarActivity.class);
             startActivity(intent);
         });
     }

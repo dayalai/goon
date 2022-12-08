@@ -12,8 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Goon"
         tools:targetApi="31">
+
         <activity
-            android:name=".views.driver.ListarCarActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +24,9 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
+
         </activity>
+
         <activity
             android:name=".views.driver.MainCarActivity"
             android:exported="true">
@@ -33,6 +36,15 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity
+            android:name=".views.driver.ListarCarActivity"
+            android:exported="true">
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
         <activity
             android:name=".views.users.TripDetail"
             android:exported="false">
@@ -54,13 +66,7 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+
     </application>
 
 </manifest>
